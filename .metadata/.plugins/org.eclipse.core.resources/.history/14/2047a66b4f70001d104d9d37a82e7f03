@@ -1,0 +1,36 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class entrada_dados {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		
+		int y;
+		
+		double z;
+		
+		char v;
+		
+		v = sc.next().charAt(1);
+		
+		x = sc.next();
+		
+		y = sc.nextInt();
+		
+		z = sc.nextDouble();     //double sempre pegará a localidade do sistema ao colocar a pontuação (BR: , e US: .)
+		// Como setamos a localidade para US, devemos utilizar o PONTO ao invés da VÍRGULA!
+		
+		System.out.println("Você digitou: " + v);
+		System.out.println("Você digitou: " + x);
+		System.out.println("Você digitou: " + y);
+		System.out.println("Você digitou: " + z);
+		
+		sc.close();
+	}
+
+}
